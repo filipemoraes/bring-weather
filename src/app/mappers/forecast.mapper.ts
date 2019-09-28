@@ -1,4 +1,4 @@
-import { Mapper } from './mapper';
+import { Mapper } from './mapper.interface';
 import { IWeather } from '../models/weather.model';
 
 export class ForecastMapper extends Mapper<IWeather> {

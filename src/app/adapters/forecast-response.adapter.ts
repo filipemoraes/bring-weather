@@ -1,7 +1,7 @@
 import { Adapter } from './adapter.interface';
 import { Weather, WeatherFactory, IWeather } from '../models/weather.model';
 import { ForecastMapper } from '../mappers/forecast.mapper';
-import { Mapper } from '../mappers/mapper';
+import { Mapper } from '../mappers/mapper.interface';
 
 export class ForecastResponseAdapter extends Adapter<Weather[]> {
   public adapt(response): Weather[] {
