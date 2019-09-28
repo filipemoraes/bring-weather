@@ -2,16 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { ForecastWeatherComponent } from './components/forecast-weather/forecast-weather.component';
-import { ForecastWeatherListComponent } from './components/forecast-weather-list/forecast-weather-list.component';
-import { CurrentWeatherComponent } from './components/current-weather/current-weather.component';
+import { CityWeatherListComponent } from './components/city-weather-list/city-weather-list.component';
+import { CityWeatherComponent } from './components/city-weather/city-weather.component';
+import { WeatherForecastListComponent } from './components/weather-forecast-list/weather-forecast-list.component';
+import { WeatherForecastComponent } from './components/weather-forecast/weather-forecast.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ForecastWeatherComponent,
-    ForecastWeatherListComponent,
-    CurrentWeatherComponent
+    CityWeatherListComponent,
+    CityWeatherComponent,
+    WeatherForecastListComponent,
+    WeatherForecastComponent
   ],
   imports: [BrowserModule, HttpClientModule],
   providers: [],
