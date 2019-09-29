@@ -22,6 +22,10 @@ export class CacheService {
     return cache;
   }
 
+  public getForecastWeatherCache(city: number): null | any {
+    return null;
+  }
+
   private getCityWeather(city: number): null | any {
     return null;
   }
