@@ -7,12 +7,10 @@ import { ICurrentWeatherCache } from '../models/cache.model';
 export class CacheService {
   constructor() {}
 
-  // TODO guardar um item por cada typo e cidade e dar a data de vencimento de cada um 10 minutos
-
-  public getCurrentWeatherCache(cities: number[]): ICurrentWeatherCache {
+  public getCurrentWeather(cities: number[]): ICurrentWeatherCache {
     const cache: ICurrentWeatherCache = { cached: [], list: [] };
     cities.map(city => {
-      const data = this.getCityWeather(city);
+      const data = this.getCityCurrentWeather(city);
       if (data) {
         cache.list.push(data);
         cache.cached.push(city);
@@ -22,11 +20,19 @@ export class CacheService {
     return cache;
   }
 
-  public getForecastWeatherCache(city: number): null | any {
+  public getForecastWeather(city: number): null | any {
     return null;
   }
 
-  private getCityWeather(city: number): null | any {
+  public setCurrentWeather(response: any): void {}
+
+  public setForecastWeather(city: number, response: any): void {}
+
+  public flushCurrentWeather(cities: number[]): void {}
+
+  public flushForecastWeather(city: number): void {}
+
+  private getCityCurrentWeather(city: number): null | any {
     return null;
   }
 }
