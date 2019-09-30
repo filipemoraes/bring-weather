@@ -33,7 +33,7 @@ export class CacheService {
   }
 
   public setForecastWeather(city: number, data: any): void {
-    const key = CURRENT_WEATHER_PREFIX + city;
+    const key = FORECAST_WEATHER_PREFIX + city;
     this.set(key, data);
   }
 
