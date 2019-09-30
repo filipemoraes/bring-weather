@@ -1,1 +1,26 @@
-<p>city-weather works!</p>
+<div class="card mb-4 shadow-sm">
+  <div class="card-body">
+    <p class="h2 text-center">{{ weather.city }}</p>
+    <div
+      class="card-header w-100 d-flex flex-column align-items-center justify-content-center "
+    >
+      <img src="http://openweathermap.org/img/wn/{{ weather.icon }}@2x.png" />
+    </div>
+    <p class="card-text text-center current">
+      {{ weather.temperature.current }}<small>º</small>
+      <small class="unit">C</small>
+    </p>
+    <p class="card-text text-center temperatures">
+      {{ weather.temperature.max }}<small>º</small>
+      <span class="min"> / {{ weather.temperature.min }}<small>º</small></span>
+    </p>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="btn-group">
+        <button type="button" class="btn btn-sm btn-outline-secondary">
+          More
+        </button>
+      </div>
+      <small class="text-muted">wind speed: {{ weather.windspeed }} m/s</small>
+    </div>
+  </div>
+</div>

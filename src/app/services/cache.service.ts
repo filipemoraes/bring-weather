@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { addMinutes, isAfter, parse, getTime } from 'date-fns';
+import { addMinutes, isAfter, getTime } from 'date-fns';
 import { ICurrentWeatherCache, IWeatherCache } from '../models/cache.model';
 
 const FREQUENCY_WEATHER_UPDATE_IN_MINUTES = 10;

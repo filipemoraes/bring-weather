@@ -1,0 +1,36 @@
+:host {
+  .card-body {
+    cursor: pointer;
+  }
+
+  .card-header {
+    border: none;
+    background: transparent;
+    height: 100px;
+    padding: 0;
+    margin: -10px 0 -10px 0;
+  }
+
+  p {
+    margin-bottom: 0;
+
+    span.min {
+      color: #bbb8b8;
+    }
+  }
+
+  p.current {
+    font-size: 65px;
+    font-weight: 300;
+    line-height: 60px;
+
+    small.unit {
+      font-size: 28px;
+      color: #bbb8b8;
+    }
+  }
+
+  p.temperatures {
+    padding-bottom: 20px;
+  }
+}

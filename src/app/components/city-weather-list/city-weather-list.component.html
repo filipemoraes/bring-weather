@@ -1,1 +1,26 @@
-<p>city-weather-list works!</p>
+<div class="container">
+  <div class="row">
+    <ng-container *ngIf="weather$ | async as weather; else loading">
+      <div class="col-md-4" *ngFor="let item of weather">
+        <app-city-weather [weather]="item"></app-city-weather>
+      </div>
+    </ng-container>
+
+    <ng-template #loading>
+      <div class="col-md-12 text-center" *ngIf="error">
+        <img src="assets/error.png" />
+        <h3>Sorry, something went wrong</h3>
+        <p>Looks like we'll have to consult another source.</p>
+        <button type="button" class="btn btn-secondary" (click)="loadData()">
+          No way! Try again
+        </button>
+      </div>
+
+      <div class="col-md-12 text-center" *ngIf="!error">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>

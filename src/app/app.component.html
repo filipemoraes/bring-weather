@@ -1,1 +1,42 @@
+<header>
+  <nav class="navbar navbar-dark bg-dark shadow-sm">
+    <a class="navbar-brand" href="#">
+      <img
+        src="assets/icon.png"
+        height="30"
+        class="d-inline-block align-top"
+        alt="BringWeather"
+      />
+      BringWeather
+    </a>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-secondary active">
+        <input
+          type="radio"
+          name="units_check"
+          id="option3"
+          autocomplete="off"
+        />
+        <small>ºC</small>
+      </label>
+      <!--<label class="btn btn-secondary">
+        <input
+          type="radio"
+          name="units_check"
+          id="option3"
+          autocomplete="off"
+        />
+        <small>ºF</small>
+      </label>-->
+    </div>
+  </nav>
+</header>
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-heading">Current Weather</h1>
+    <p class="lead text-muted">
+      {{ date }}
+    </p>
+  </div>
+</section>
 <app-city-weather-list></app-city-weather-list>

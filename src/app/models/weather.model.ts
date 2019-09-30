@@ -23,6 +23,9 @@ export class Weather {
 
   constructor(data: IWeather) {
     Object.assign(this, data);
+    this.temperature.current = Math.round(this.temperature.current);
+    this.temperature.min = Math.round(this.temperature.min);
+    this.temperature.max = Math.round(this.temperature.max);
   }
 
   // TODO create property with local datetime
