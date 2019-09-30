@@ -1,1 +1,70 @@
-<p>weather-forecast-list works!</p>
+<div class="modal-header">
+  <h4 class="modal-title">
+    <img
+      src="http://openweathermap.org/img/wn/{{ weather.icon }}@2x.png"
+      width="60"
+    />
+    {{ weather.city }} <small>/ Forecast Weather</small>
+  </h4>
+  <button
+    type="button"
+    class="close"
+    aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')"
+  >
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <p class="card-text text-center current">
+    {{ weather.temperature.current }}<small>º</small>
+    <small class="unit">C</small>
+  </p>
+
+  <p class="card-text text-center temperatures">
+    {{ weather.temperature.max }}<small>º</small>
+    <span class="min"> / {{ weather.temperature.min }}<small>º</small></span>
+  </p>
+
+  <p class="time">
+    <small>
+      <img src="assets/clock.png" width="20" />
+      {{ weather.localTime }}
+    </small>
+  </p>
+
+  <ng-container *ngIf="forecast$ | async as weather; else loading">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let item of weather">
+        <app-weather-forecast [weather]="item"></app-weather-forecast>
+      </li>
+    </ul>
+  </ng-container>
+
+  <ng-template #loading>
+    <div class="col-md-12 text-center" *ngIf="error">
+      <img src="assets/error.png" />
+      <h3>Sorry, something went wrong</h3>
+      <p>Looks like we'll have to consult another source.</p>
+      <br />
+      <button type="button" class="btn btn-secondary" (click)="loadData()">
+        No way! Try again
+      </button>
+    </div>
+
+    <div class="col-md-12 text-center" *ngIf="!error">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </ng-template>
+</div>
+<div class="modal-footer">
+  <button
+    type="button"
+    class="btn btn-outline-dark"
+    (click)="activeModal.close('Close click')"
+  >
+    Close
+  </button>
+</div>

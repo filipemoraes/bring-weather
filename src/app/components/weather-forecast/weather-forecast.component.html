@@ -1,1 +1,12 @@
-<p>weather-forecast works!</p>
+<div class="d-flex justify-content-between align-items-center">
+  <p class="time">
+    {{ weather.getLocalForecastTime() }}
+  </p>
+  <img src="http://openweathermap.org/img/wn/{{ weather.icon }}@2x.png" />
+  <p class="current text-right">
+    {{ weather.temperature.current }}<small>º</small>
+    <small class="unit">C</small>
+    <br />
+    <small class="windspeed">wind speed: {{ weather.windspeed }} m/s</small>
+  </p>
+</div>

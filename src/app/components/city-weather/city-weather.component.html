@@ -1,6 +1,8 @@
 <div class="card mb-4 shadow-sm">
-  <div class="card-body">
-    <p class="h2 text-center">{{ weather.city }}</p>
+  <div class="card-body" (click)="openMore()">
+    <p class="h2 text-center">
+      {{ weather.city }} <small>/ {{ weather.localTime }}</small>
+    </p>
     <div
       class="card-header w-100 d-flex flex-column align-items-center justify-content-center "
     >

@@ -1,0 +1,48 @@
+:host {
+  button.close:focus {
+    outline: none;
+  }
+
+  .modal-title {
+    small {
+      font-size: 16px;
+      color: #bbb8b8;
+    }
+  }
+
+  .modal-footer {
+    border-top: none;
+  }
+
+  p {
+    margin-bottom: 0;
+
+    span.min {
+      color: #bbb8b8;
+    }
+
+    &.h2 {
+      padding-bottom: 10px;
+    }
+
+    &.current {
+      font-size: 65px;
+      font-weight: 300;
+      line-height: 60px;
+
+      small.unit {
+        font-size: 28px;
+        color: #bbb8b8;
+      }
+    }
+
+    &.temperatures {
+      padding-bottom: 20px;
+    }
+
+    &.time {
+      position: absolute;
+      top: 90px;
+    }
+  }
+}

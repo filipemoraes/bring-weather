@@ -1,6 +1,11 @@
 :host {
   .card-body {
     cursor: pointer;
+
+    p.h2 small {
+      font-size: 18px;
+      color: #bbb8b8;
+    }
   }
 
   .card-header {
@@ -17,20 +22,20 @@
     span.min {
       color: #bbb8b8;
     }
-  }
 
-  p.current {
-    font-size: 65px;
-    font-weight: 300;
-    line-height: 60px;
+    &.current {
+      font-size: 65px;
+      font-weight: 300;
+      line-height: 60px;
 
-    small.unit {
-      font-size: 28px;
-      color: #bbb8b8;
+      small.unit {
+        font-size: 28px;
+        color: #bbb8b8;
+      }
     }
-  }
 
-  p.temperatures {
-    padding-bottom: 20px;
+    &.temperatures {
+      padding-bottom: 20px;
+    }
   }
 }

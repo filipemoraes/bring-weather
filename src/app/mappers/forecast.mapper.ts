@@ -10,7 +10,8 @@ export class ForecastMapper extends Mapper<IWeather> {
     'city.timezone': 'timezone',
     'list[0].main.temp': 'temperature.current',
     'list[0].main.temp_min': 'temperature.min',
-    'list[0].main.temp_max': 'temperature.max'
+    'list[0].main.temp_max': 'temperature.max',
+    'list[0].dt_txt': 'forecastDate'
   };
 
   public map(src): IWeather {

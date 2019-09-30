@@ -9,7 +9,6 @@ import { ICurrentWeatherCache } from '../models/cache.model';
 import { GroupResponseAdapter } from '../adapters/group-response.adapter';
 import { ForecastResponseAdapter } from '../adapters/forecast-response.adapter';
 
-const FORECAST_RESULT_LIMIT = 4;
 const FORECAST_BASE_URL = `${environment.api.baseURL}forecast?appid=${environment.api.key}`;
 const GROUP_BASE_URL = `${environment.api.baseURL}group?appid=${environment.api.key}`;
 const UNITS = 'metric';
@@ -55,7 +54,7 @@ export class ApiService {
 
   public getForecastWeather(city: number): Observable<Weather[]> {
     const cache = this.cacheService.getForecastWeather(city);
-    const URI = `${FORECAST_BASE_URL}&id=${city}&cnt=${FORECAST_RESULT_LIMIT}&units=${UNITS}`;
+    const URI = `${FORECAST_BASE_URL}&id=${city}&units=${UNITS}`;
 
     return cache
       ? of(cache).pipe(map(this.adaptForecastResponse))
