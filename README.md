@@ -19,10 +19,13 @@ TSLint - https://palantir.github.io/tslint/
     ![Screenshot](https://github.com/filipemoraes/bring-weather/blob/master/sequence-diagram-city-weather-details.png)
 
 - **Screenshots**
-![Screenshot](https://github.com/filipemoraes/bring-weather/blob/master/Screenshot%202019-09-30%20at%2009.46.28.png)
+    - City Weather List
+    ![Screenshot](https://github.com/filipemoraes/bring-weather/blob/master/Screenshot%202019-09-30%20at%2009.46.28.png)
 
-![Screenshot](https://github.com/filipemoraes/bring-weather/blob/master/Screenshot%202019-09-30%20at%2009.46.56.png)
+    - City Weather Details
+    ![Screenshot](https://github.com/filipemoraes/bring-weather/blob/master/Screenshot%202019-09-30%20at%2009.46.56.png)
 
-![Screenshot](https://github.com/filipemoraes/bring-weather/blob/master/Screenshot%202019-09-30%20at%2009.47.38.png)
+    - Errors
+    ![Screenshot](https://github.com/filipemoraes/bring-weather/blob/master/Screenshot%202019-09-30%20at%2009.47.38.png)
 
-![Screenshot](https://github.com/filipemoraes/bring-weather/blob/master/Screenshot%202019-09-30%20at%2009.48.07.png)
+    ![Screenshot](https://github.com/filipemoraes/bring-weather/blob/master/Screenshot%202019-09-30%20at%2009.48.07.png)
