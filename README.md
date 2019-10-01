@@ -13,6 +13,7 @@ Prettier - https://prettier.io/
 TSLint - https://palantir.github.io/tslint/
 
 - **Sequence Diagram**<br/>
+    - City Weather List
 ![Screenshot](https://github.com/filipemoraes/bring-weather/blob/master/sequence-diagram-city-weather-list.png)
 
 - **Screenshots**
