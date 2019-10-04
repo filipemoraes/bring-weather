@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  bring-weather:
+    image: bring-weather
+    build: .
+    ports:
+      - 8081:80
