@@ -1,10 +1,15 @@
 # BringWeather
 
 - **Instructions**<br/>
-    - setting up the local environment and workspace: https://angular.io/guide/setup-local
-    - git clone git@github.com:filipemoraes/bring-weather.git
-    - npm install
-    - ng serve --open
+    - **Local environment**
+      - setting up the local environment and workspace: https://angular.io/guide/setup-local
+      - git clone git@github.com:filipemoraes/bring-weather.git
+      - npm install
+      - ng serve --open
+      - localhost:3000
+    - **Docker**
+      - docker-compose up -d --build
+      - localhost:8081
 
 - **Code formatter:**<br/>
 Prettier - https://prettier.io/
